@@ -256,7 +256,10 @@ public class AppOperatingActivity extends AppCompatActivity {
         dir.delete();// 删除目录本身
     }
 
-    //权限信息
+    /**
+     * 权限信息
+     * @param view
+     */
     public void permissionInfo(View view) {
         Intent intent = new Intent(AppOperatingActivity.this, PermissionInfoActivity.class);
         intent.putExtra("appInfo", appInfo);
